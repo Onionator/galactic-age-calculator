@@ -4,6 +4,7 @@ import { ageIsNumber } from './galactic_calc.js';
 import { galacticAge } from './galactic_calc.js';
 import { yearsLeftToLive } from './galactic_calc.js';
 
+// tell the user how old he is on each planet and when he is expected to die on each planet
 function galacticAgeOnAllPlanets() {
   $('#solution').text('');
   let age = new Date($('#year').val(), $('#month').val(), $('#day').val());
