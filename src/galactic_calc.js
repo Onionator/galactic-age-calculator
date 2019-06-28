@@ -87,6 +87,5 @@ export function yearsLeftToLive(years) {
   // average life span on earth is 80 years. Because I say so!
   const averageLifeSpan = 80;
   // take the age of the user and and figure out how many earth years the user has left to live
-  console.log(averageLifeSpan - years);
   return averageLifeSpan - years;
 }
