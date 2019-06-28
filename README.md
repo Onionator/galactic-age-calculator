@@ -19,7 +19,7 @@ This program is a project for the coding school Epicodus that allows students to
 
 ## Setup/Installation Requirements
 
-* Clone this repo to your desktop
+* Clone this repo from https://github.com/Onionator/galactic-age-calculator.git to your desktop
 * Change directories in terminal to this project's folder
 * Type npm install
 * Type npm run start
