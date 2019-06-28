@@ -11,7 +11,10 @@ import { galacticAge } from './../src/galactic_calc.js';
 describe('ageIsNumber', function () {
 
   it('should test whether the input passed to it is a number.', function () {
-    let userAge = 23;
+    let age = new Date(1996, 4, 25);
+    let current = new Date();
+    let userAge = current.getFullYear() - age.getFullYear();
+    console.log(`log 0- in spec-- user is ${userAge} years old.`);
     expect(ageIsNumber(userAge)).toEqual(true);
   });
 });
@@ -79,6 +82,8 @@ describe('galacticAge', function () {
     expect(galacticAge(userAge)).toEqual(true);
   });
 });
+
+
 
 
 
