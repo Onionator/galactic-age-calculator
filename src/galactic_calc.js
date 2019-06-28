@@ -14,14 +14,61 @@ export function ageOnMercury(number) {
   // 1 Mercury year = .24 Earth years
   number = parseInt(number / .24);
   console.log(`log 2-- the users age in Mercury years is: ${number}.`);
-  return
+  return number;
 }
 
 export function ageOnVenus(number) {
-  // 1 Venus year = .24 Earth years
+  // 1 Venus year = .616 Earth years
   number = parseInt(number / .616);
   console.log(`log 3-- the users age in Venus years is: ${number}.`);
-  return
+  return number;
+}
+
+export function ageOnMars(number) {
+  // 1 Mars year = 1.88 Earth years
+  number = parseInt(number / 1.88);
+  console.log(`log 4-- the users age in Mars years is: ${number}.`);
+  return number;
+}
+
+export function ageOnJupiter(number) {
+  // 1 Jupiter year = 11.86 Earth years
+  number = parseInt(number / 11.86);
+  console.log(`log 5-- the users age in Jupiter years is: ${number}.`);
+  return number;
+}
+
+export function ageOnSaturn(number) {
+  // 1 Saturn year = 29.457 Earth years
+  number = parseInt(number / 29.457);
+  console.log(`log 6-- the users age in Saturn years is: ${number}.`);
+  return number;
+}
+
+export function ageOnUranus(number) {
+  // 1 Uranus year = 84 Earth years
+  number = parseInt(number / 84);
+  console.log(`log 7-- the users age in Uranus years is: ${number}.`);
+  return number;
+}
+
+export function ageOnNeptune(number) {
+  // 1 Neptune year = 164.8 Earth years
+  number = parseInt(number / 164.8);
+  console.log(`log 8-- the users age in Neptune years is: ${number}.`);
+  return number;
+}
+
+export function galacticAge(number) {
+  // how long the planets year is relative to an earth year
+  let planetYears = [.24, .616, 1, 1.88, 11.86, 29.457, 84, 164.8]
+  let planet = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune']
+  let years = [];
+  for (let i = 0; i < planetYears.length; i++) {
+    years[i] = parseInt(number / planetYears[i]);
+    console.log(`log ${i + 1}-- the users age in ${planet[i]} years is: ${years[i]}!`);
+  }
+  return true;
 }
 
 // export function weekDay(day) {

@@ -1,6 +1,12 @@
 import { ageIsNumber } from './../src/galactic_calc.js';
 import { ageOnMercury } from './../src/galactic_calc.js';
 import { ageOnVenus } from './../src/galactic_calc.js';
+import { ageOnMars } from './../src/galactic_calc.js';
+import { ageOnJupiter } from './../src/galactic_calc.js';
+import { ageOnSaturn } from './../src/galactic_calc.js';
+import { ageOnUranus } from './../src/galactic_calc.js';
+import { ageOnNeptune } from './../src/galactic_calc.js';
+import { galacticAge } from './../src/galactic_calc.js';
 
 describe('ageIsNumber', function () {
 
@@ -14,7 +20,7 @@ describe('ageOnMercury', function () {
 
   it('should test to see if the proper age on Mercury is returned.', function () {
     let userAge = 23;
-    expect(ageOnMercury(userAge).toEqual(95));
+    expect(ageOnMercury(userAge)).toEqual(95);
   });
 });
 
@@ -22,10 +28,57 @@ describe('ageOnVenus', function () {
 
   it('should test to see if the proper age on Venus is returned.', function () {
     let userAge = 23;
-    expect(ageOnVenus(userAge).toEqual(37));
+    expect(ageOnVenus(userAge)).toEqual(37);
   });
 });
 
+describe('ageOnMars', function () {
+
+  it('should test to see if the proper age on Mars is returned.', function () {
+    let userAge = 23;
+    expect(ageOnMars(userAge)).toEqual(12);
+  });
+});
+
+describe('ageOnJupiter', function () {
+
+  it('should test to see if the proper age on Jupiter is returned.', function () {
+    let userAge = 23;
+    expect(ageOnJupiter(userAge)).toEqual(1);
+  });
+});
+
+describe('ageOnSaturn', function () {
+
+  it('should test to see if the proper age on Saturn is returned.', function () {
+    let userAge = 23;
+    expect(ageOnSaturn(userAge)).toEqual(0);
+  });
+});
+
+describe('ageOnUranus', function () {
+
+  it('should test to see if the proper age on Uranus is returned.', function () {
+    let userAge = 23;
+    expect(ageOnUranus(userAge)).toEqual(0);
+  });
+});
+
+describe('ageOnNeptune', function () {
+
+  it('should test to see if the proper age on Neptune is returned.', function () {
+    let userAge = 23;
+    expect(ageOnNeptune(userAge)).toEqual(0);
+  });
+});
+
+describe('galacticAge', function () {
+
+  it('should test to see if the proper ages are returned.', function () {
+    let userAge = 23;
+    expect(galacticAge(userAge)).toEqual(true);
+  });
+});
 
 
 
