@@ -1,6 +1,7 @@
 
 // determines if the user's input is a number
 export function ageIsNumber(number) {
+  // if the user's input is a number return true
   if (Number.isInteger(number)) {
     console.log(`log 1-- the users age in earth years is: ${number}.`);
     return true;
@@ -61,26 +62,28 @@ export function ageOnNeptune(number) {
 
 export function galacticAge(number) {
   // how long the planets year is relative to an earth year
-  let planetYears = [.24, .616, 1, 1.88, 11.86, 29.457, 84, 164.8]
-  let planet = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune']
-  let years = [];
+  const planetYears = [.24, .616, 1, 1.88, 11.86, 29.457, 84, 164.8];
+  // name of the planets with indexes maxing their years in planetYears
+  const planet = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune'];
+  // a new array to save the results for future output
+  const years = [];
+  // loop through all the planets to populate the years array
   for (let i = 0; i < planetYears.length; i++) {
+    // calculate the user's age on each different planet and save it in the corresponding index of the years array
     years[i] = parseInt(number / planetYears[i]);
-    console.log(`log ${i + 1}-- the users age in ${planet[i]} years is: ${years[i]}!`);
+    console.log(`log ${i + 1}- galacticAge function-- the users age in ${planet[i]} years is: ${years[i]}!`);
   }
   return true;
 }
 
-// export function weekDay(day) {
-//   console.log('in weekDay');
-//   if (dayIsNumber(day)) {
-//     const daysOfTheWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday',  'Saturday'];
-//     for (let i = 0; i < 7; i++) {
-//       if (day === i) {
-//         return daysOfTheWeek[i];
-//       }
-//     }
-//   } else {
-//     return ('Please enter a valid date in number format.');
-//   }
-// }
+// a function that determines the user's age based on the current year and the year the user was born
+export function calcAge(birthday) {
+  // get the current date
+  let current = new Date();
+  // return the current year - the year of the birthday to get the age of the user
+  return current.getFullYear() - birthday.getFullYear();
+}
+
+export function averageLifeSpan(years) {
+  // take the age of the user and and figure out how many earth years the user has left to live
+}
