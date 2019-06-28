@@ -78,7 +78,7 @@ describe('galacticAge', function () {
 
   it('should test to see if the proper ages are returned.', function () {
     let age = new Date(1996, 4, 25);
-    expect(galacticAge(calcAge(age))).toEqual(true);
+    expect(galacticAge(calcAge(age))).toEqual([95, 37, 23, 12, 1, 0, 0, 0]);
   });
 });
 
@@ -97,16 +97,3 @@ describe('yearsLeftToLive', function () {
     expect(yearsLeftToLive(calcAge(age))).toEqual(57);
   });
 });
-
-
-
-
-
-// describe('age', function () {
-//
-//   it('should print out the word associated with the age of the week.', function () {
-//     let age = new Date(1976, 0, 8);
-//     let armpit = age.getDay();
-//     expect(weekDay(armpit)).toEqual('Thursday');
-//   })
-// })

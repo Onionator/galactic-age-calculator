@@ -5,9 +5,10 @@ import { yearsLeftToLive } from './galactic_calc.js';
 
 function ageOn8Planets() {
   let age = new Date(1996, 4, 25);
-  if (ageIsNumber(calcAge(age))) {
-    galacticAge(calcAge(age));
-    galacticAge(yearsLeftToLive(calcAge(age)));
+  let yearsOld = calcAge(age);
+  if (ageIsNumber(yearsOld)) {
+    galacticAge(yearsOld);
+    galacticAge(yearsLeftToLive(yearsOld));
   } else {
     console.log('main- log 1-- Error in calls.');
   }

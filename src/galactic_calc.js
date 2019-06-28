@@ -70,9 +70,10 @@ export function galacticAge(number) {
   for (let i = 0; i < planetYears.length; i++) {
     // calculate the user's age on each different planet and save it in the corresponding index of the years array
     years[i] = parseInt(number / planetYears[i]);
-    console.log(`galactic_calc- log ${i + 1}- galacticAge function-- the users age in ${planet[i]} years is: ${years[i]}!`);
+    console.log(`galactic_calc- log ${i + 1}-- galacticAge function--- \n${planet[i]} years is: ${years[i]}!`);
   }
-  return true;
+  console.log(years);
+  return years;
 }
 
 // a function that determines the user's age based on the current year and the year the user was born
