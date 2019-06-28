@@ -72,7 +72,6 @@ export function galacticAge(number) {
     years[i] = parseInt(number / planetYears[i]);
     console.log(`galactic_calc- log ${i + 1}-- galacticAge function--- \n${planet[i]} years is: ${years[i]}!`);
   }
-  console.log(years);
   return years;
 }
 
