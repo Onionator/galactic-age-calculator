@@ -1,4 +1,4 @@
-# Weekday Calculator
+# Galactic Age Calculator
 
 #### Program takes in a year, month and date of the user's birthday and returns how old the user is in years on different planets
 #### By Sam Cook
@@ -28,7 +28,7 @@ This program is a project for the coding school Epicodus that allows students to
 
 ## Known Bugs
 
-There are no known bugs at this time.
+If you have not had your birthday yet it will ignore that and assume you are the maximum age you can be this year.
 
 ## Support and contact details
 

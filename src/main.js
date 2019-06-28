@@ -1,3 +1,4 @@
+import './styles.css';
 import $ from 'jquery';
 import { calcAge } from './galactic_calc.js';
 import { ageIsNumber } from './galactic_calc.js';

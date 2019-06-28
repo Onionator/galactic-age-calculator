@@ -1,3 +1,10 @@
 body {
-  background-color: rgb(182, 228, 238);
-};
+  background-color: black;
+  color: white;
+  font-size: 20px;
+}
+h1 {
+  font-size: 100px;
+  text-align: center;
+  text-shadow: -2px -2px yellow;
+}
