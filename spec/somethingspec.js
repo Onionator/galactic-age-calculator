@@ -8,6 +8,7 @@ import { ageOnUranus } from './../src/galactic_calc.js';
 import { ageOnNeptune } from './../src/galactic_calc.js';
 import { galacticAge } from './../src/galactic_calc.js';
 import { calcAge } from './../src/galactic_calc.js';
+import { yearsLeftToLive } from './../src/galactic_calc.js';
 
 describe('ageIsNumber', function () {
 
@@ -85,9 +86,17 @@ describe('calcAge', function () {
 
   it('should test to see if calcAge returns the age of the user', function () {
     let age = new Date(1996, 4, 25);
-    console.log(`log 0- in spec-- user is ${calcAge(age)} years old.`);
-  })
-})
+    expect(calcAge(age)).toEqual(23);
+  });
+});
+
+describe('yearsLeftToLive', function () {
+
+  it('should test to see if the proper years left to live is returned', function () {
+    let age = new Date(1996, 4, 25);
+    expect(yearsLeftToLive(calcAge(age))).toEqual(57);
+  });
+});
 
 
 

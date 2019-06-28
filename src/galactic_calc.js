@@ -79,11 +79,14 @@ export function galacticAge(number) {
 // a function that determines the user's age based on the current year and the year the user was born
 export function calcAge(birthday) {
   // get the current date
-  let current = new Date();
+  const current = new Date();
   // return the current year - the year of the birthday to get the age of the user
   return current.getFullYear() - birthday.getFullYear();
 }
 
-export function averageLifeSpan(years) {
+export function yearsLeftToLive(years) {
+  // average life span on earth is 80 years. Because I say so!
+  const averageLifeSpan = 80;
   // take the age of the user and and figure out how many earth years the user has left to live
+  return averageLifeSpan - years;
 }
